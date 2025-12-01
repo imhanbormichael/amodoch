@@ -1,0 +1,131 @@
+/* General Reset */
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #000;
+  color: gold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo img {
+  height: 100px;
+  width: auto;
+}
+
+header div {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: gold;
+}
+
+.book-btn {
+  background-color: gold;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+  background-color: #d4af37;
+}
+
+/* service Section */
+.services {
+  background-color: #002b5c;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.card h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.card p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+
+
+.services {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.services h3 {
+  font-size: 18px;
+  color: gray;
+  margin-bottom: 40px;
+}
+
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 280px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  font-size: xx-large;
+  color: #000;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #555;
+}

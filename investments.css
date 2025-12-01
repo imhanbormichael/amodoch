@@ -1,0 +1,96 @@
+/* General Reset */
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #000;
+  color: gold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.logo img {
+  height: 100px;
+  width: auto;
+}
+
+header div {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+header nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+header nav a:hover {
+  color: gold;
+}
+
+.book-btn {
+  background-color: gold;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.book-btn:hover {
+  background-color: #d4af37;
+}
+
+
+
+
+/* ===== INVESTMENT PLANS PAGE ===== */
+.investment-page {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.investment-page h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #002b5c;
+}
+
+.investment-page p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.investment-page .plan {
+  background: #fff;
+  border: 2px solid gold;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.investment-page .plan h3 {
+  color: gold;
+  margin-bottom: 10px;
+}
