@@ -61,6 +61,10 @@ header nav a:hover {
   background-color: #d4af37;
 }
 
+.nav-links:visited {
+  color: #d4af37;
+}
+
 /* ===== VEHICLE RENTALS PAGE ===== */
 .rentals-page {
   padding: 60px 20px;

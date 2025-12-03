@@ -61,7 +61,9 @@ header nav a:hover {
   background-color: #d4af37;
 }
 
-
+.nav-links:visited {
+  color: #d4af37;
+}
 
 
 /* ===== INVESTMENT PLANS PAGE ===== */

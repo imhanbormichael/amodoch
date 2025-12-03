@@ -61,6 +61,10 @@ header nav a:hover {
   background-color: #d4af37;
 }
 
+.nav-links:visited {
+  color: #d4af37;
+}
+
 /* service Section */
 .services {
   background-color: #002b5c;
