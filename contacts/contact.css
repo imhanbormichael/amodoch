@@ -79,7 +79,10 @@ header nav a:hover {
   color: #002b5c;
 }
 
-.contact-page p {
+.contact-page  p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   font-size: 16px;
   margin-bottom: 10px;
 }
@@ -89,4 +92,8 @@ header nav a:hover {
   padding: 20px;
   border-radius: 8px;
   border: 2px solid gold;
+}
+
+.contact-info p a img {
+  max-width: 50px;
 }
