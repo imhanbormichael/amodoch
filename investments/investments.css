@@ -71,6 +71,7 @@ header nav a:hover {
   padding: 60px 20px;
   max-width: 900px;
   margin: auto;
+  text-align: center;
 }
 
 .investment-page h2 {
