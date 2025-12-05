@@ -26,7 +26,13 @@ header {
 .logo img {
   height: 100px;
   width: auto;
+  display: block;
 }
+
+.logo {
+  color: #f9f9f9;
+}
+
 
 header div {
   font-family: 'Montserrat', sans-serif;
@@ -72,7 +78,7 @@ header nav a:hover {
   background-color: #002b5c;
   color: white;
   text-align: center;
-  padding: 80px 20px;
+  padding: 60px 20px;
 }
 
 .hero h1 {
@@ -91,5 +97,16 @@ header nav a:hover {
   width: 100%;
   margin-top: 30px;
   border-radius: 8px;
+}
+
+
+.right {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 30px;
+}
+
+.right img {
+  max-width: 40px;
 }
 
