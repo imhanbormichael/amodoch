@@ -5,13 +5,7 @@
   box-sizing: border-box;
 }
 
-/* Fonts */
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
-  line-height: 1.6;
-}
+
 
 /* Header */
 header {
@@ -62,43 +56,122 @@ header nav a:hover {
 }
 
 /* ===== BOOK NOW PAGE ===== */
-.book-page {
-  padding: 60px 20px;
-  max-width: 600px;
-  margin: auto;
+/* Wrapper spacing to sit below navbar */
+.booking-wrapper {
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    background: #f7f9fc;
+    min-height: calc(100vh - 80px); /* Adjust if navbar height differs */
 }
 
-.book-page h2 {
-  font-size: 32px;
-  margin-bottom: 20px;
-  color: #002b5c;
+/* Main container */
+.booking-container {
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+    color: #2c2f3a;
+    font-family: "Poppins", sans-serif;
 }
 
-.book-page form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+/* Title */
+.booking-title {
+    font-size: 2.4rem;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: #1d2240;
+    animation: glow 3s infinite ease-in-out alternate;
 }
 
-.book-page form input,
-.book-page form select,
-.book-page form textarea {
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+.booking-subtitle {
+    font-size: 1.2rem;
+    color: #545b6b;
+    margin-bottom: 40px;
+    line-height: 1.6;
 }
 
-.book-page form button {
-  background-color: gold;
-  color: black;
-  padding: 12px;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+/* Card */
+.booking-card {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 18px;
+    box-shadow: 0 12px 28px rgba(0,0,0,0.08);
+    border: 1px solid #e6e9ef;
+    animation: float 6s ease-in-out infinite;
 }
 
-.book-page form button:hover {
-  background-color: #d4af37;
+.booking-card h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.booking-link {
+    color: #3454d1;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.booking-link:hover {
+    text-decoration: underline;
+}
+
+/* Button */
+.booking-btn {
+    display: inline-block;
+    margin-top: 25px;
+    background: #3454d1;
+    color: white;
+    padding: 14px 34px;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.booking-btn:hover {
+    background: #2843a8;
+    transform: translateY(-3px);
+}
+
+/* Animations */
+.fade-in {
+    animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.slide-up {
+    animation: slideUp 1s ease forwards;
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 6px rgba(52, 84, 209, 0.2); }
+    100% { text-shadow: 0 0 14px rgba(52, 84, 209, 0.55); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+    100% { transform: translateY(0); }
+}
+
+.bounce:hover {
+    animation: bounceAnim 0.45s ease;
+}
+
+@keyframes bounceAnim {
+    0% { transform: translateY(0); }
+    40% { transform: translateY(-5px); }
+    60% { transform: translateY(2px); }
+    100% { transform: translateY(0); }
 }
