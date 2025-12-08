@@ -1,122 +1,145 @@
-/* General Reset */
+/* ================================
+   GLOBAL RESET
+==================================*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Fonts */
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f9f9f9;
+  font-family: "Poppins", sans-serif;
+  background: #f9f9f9;
   color: #333;
   line-height: 1.6;
 }
 
-/* Header */
-header {
-  background-color: #000;
-  color: gold;
+/* ================================
+   HEADER / NAVBAR
+==================================*/
+.header {
+  background: #000;
+  color: #fff;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
+  justify-content: space-between;
+  padding: 18px 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
 }
 
 .logo img {
-  height: 100px;
+  height: 70px;
   width: auto;
-  display: block;
 }
 
-.logo {
-  color: #f9f9f9;
+.tagline {
+  font-size: 10px;
+  color: gold;
+  margin-top: -8px;
 }
 
-
-header div {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  font-weight: bold;
+nav {
+  display: flex;
+  gap: 20px;
 }
 
-header nav a {
+nav a {
   color: white;
-  margin: 0 15px;
-  text-decoration: none;
   font-weight: 600;
-  transition: color 0.3s ease;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-header nav a:hover {
+nav a:hover {
   color: gold;
 }
 
 .book-btn {
-  background-color: gold;
-  color: black;
-  padding: 10px 20px;
+  background: gold;
+  color: #000;
+  padding: 10px 22px;
+  border-radius: 5px;
   border: none;
   font-weight: bold;
   cursor: pointer;
-  border-radius: 4px;
-  transition: background-color 0.3s ease;
+  transition: 0.3s;
 }
 
 .book-btn:hover {
-  background-color: #d4af37;
+  background: #d4af37;
 }
 
-.nav-links:visited {
-  color: #d4af37;
+/* ================================
+   HAMBURGER MENU (MOBILE)
+==================================*/
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: gold;
+  cursor: pointer;
 }
 
-
-
-/* Hero Section */
-.hero {
-  background-color: #002b5c;
-  color: white;
+/* MOBILE NAV MENU */
+nav.open {
+  display: block;
+  position: absolute;
+  top: 85px;
+  right: 0;
+  width: 100%;
+  padding: 20px 0;
+  background: #000;
   text-align: center;
-  padding: 60px 20px;
+}
+
+nav.open a {
+  display: block;
+  padding: 15px 0;
+  border-bottom: 1px solid #222;
+}
+
+/* ================================
+   HERO SECTION
+==================================*/
+.hero {
+  background: #002b5c;
+  color: #fff;
+  text-align: center;
+  padding: 140px 20px 80px;
 }
 
 .hero h1 {
-  font-family: 'Montserrat', sans-serif;
   font-size: 42px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
+  font-weight: 700;
 }
 
 .hero p {
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .hero img {
   max-width: 600px;
   width: 100%;
-  margin-top: 30px;
-  border-radius: 8px;
+  border-radius: 6px;
+  margin-top: 25px;
 }
 
-
-.right {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px 30px;
-}
-
-.right img {
-  max-width: 40px;
-}
-/* ===== HOMEPAGE IMPROVEMENT SECTIONS ===== */
-
+/* ================================
+   SECTION DEFAULTS
+==================================*/
 section {
   padding: 70px 6%;
-  font-family: 'Poppins', sans-serif;
 }
 
-/* --- Services Overview --- */
+/* ================================
+   SERVICES
+==================================*/
 .services-overview h2,
 .about h2,
 .why-us h2,
@@ -135,30 +158,32 @@ section {
 }
 
 .service-card {
-  background: #ffffff;
+  background: #fff;
   padding: 25px;
   border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
   text-align: center;
-  transition: 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
 }
 
 .service-card img {
   width: 70px;
-  margin-bottom: 15px;
+  margin-bottom: 18px;
 }
 
 .service-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
 }
 
-/* --- About Section --- */
+/* ================================
+   ABOUT
+==================================*/
 .about {
   background: #000;
-  color: white;
-  text-align: center;
+  color: #fff;
   padding: 80px 6%;
+  text-align: center;
   border-top: 2px solid gold;
   border-bottom: 2px solid gold;
 }
@@ -167,25 +192,27 @@ section {
   max-width: 750px;
   margin: auto;
   line-height: 1.7;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
-/* --- Why Choose Us --- */
+/* ================================
+   WHY US
+==================================*/
 .why-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 15px;
+  gap: 18px;
 }
 
 .why-card {
   background: #111;
   color: gold;
   padding: 18px;
-  border-radius: 8px;
+  border-radius: 6px;
+  border: 1px solid gold;
   text-align: center;
   font-weight: 600;
-  border: 1px solid gold;
-  transition: 0.3s ease;
+  transition: 0.3s;
 }
 
 .why-card:hover {
@@ -193,21 +220,22 @@ section {
   color: #000;
 }
 
-/* --- CTA Section --- */
+/* ================================
+   CTA SECTION
+==================================*/
 .cta-section {
-  text-align: center;
   background: gold;
-  padding: 70px 6%;
   color: #000;
+  text-align: center;
   border-radius: 8px;
 }
 
 .cta-btn {
   display: inline-block;
-  background: black;
+  background: #000;
   color: gold;
-  padding: 12px 30px;
-  margin-top: 20px;
+  padding: 12px 32px;
+  margin-top: 18px;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 700;
@@ -215,11 +243,130 @@ section {
 }
 
 .cta-btn:hover {
-  background: #222;
+  background: #333;
 }
 
-/* Reuse your already defined animations */
-.fade-in { animation: fadeIn 1s ease-out; }
-.slide-up { animation: slideUp 1s ease-out; }
+/* ================================
+   MEGA FOOTER
+==================================*/
+.mega-footer {
+  background: #192139;
+  color: #fff;
+  padding: 60px 6% 25px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 35px;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  color: gold;
+  font-size: 20px;
+}
+
+.footer-col a {
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+  margin: 8px 0;
+  transition: 0.3s;
+}
+
+.footer-col a:hover {
+  color: gold;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 12px;
+}
+
+.social-links {
+  display: flex;
+  
+}
+
+.social-links img {
+  width: 35px;
+  margin-right: 8px;
+}
+
+.social-links img:hover {
+  width: 35px;
+  margin-right: 8px;
+  border: 10px 10px solid #000;
+  border-radius: 90px;
+  background-color: #d4af37;
+}
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 25px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+/* ================================
+   WHATSAPP FLOATING BUTTON
+==================================*/
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 2000;
+}
+
+.whatsapp-float img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.whatsapp-float img:hover {
+  transform: scale(1.1);
+}
+
+/* ================================
+   MOBILE RESPONSIVE
+==================================*/
+@media (max-width: 900px) {
+  nav {
+    display: none;
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .header {
+    padding: 15px 25px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo img {
+    height: 55px;
+  }
+  
+  .book-btn {
+    padding: 8px 14px;
+  }
+  
+  .hero img {
+    max-width: 90%;
+  }
+}
 
 

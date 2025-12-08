@@ -97,3 +97,126 @@ header nav a:hover {
 .contact-info p a img {
   max-width: 50px;
 }
+
+/* ================================
+   MEGA FOOTER
+==================================*/
+.mega-footer {
+  background: #192139;
+  color: #fff;
+  padding: 60px 6% 25px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 35px;
+}
+
+.footer-col h4 {
+  margin-bottom: 15px;
+  color: gold;
+  font-size: 20px;
+}
+
+.footer-col a {
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+  margin: 8px 0;
+  transition: 0.3s;
+}
+
+.footer-col a:hover {
+  color: gold;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 12px;
+}
+
+.social-links {
+  display: flex;
+  
+}
+
+.social-links img {
+  width: 35px;
+  margin-right: 8px;
+}
+
+.social-links img:hover {
+  width: 35px;
+  margin-right: 8px;
+  border: 10px 10px solid #000;
+  border-radius: 90px;
+  background-color: #d4af37;
+}
+
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 25px;
+  border-top: 1px solid #444;
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+/* ================================
+   WHATSAPP FLOATING BUTTON
+==================================*/
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  z-index: 2000;
+}
+
+.whatsapp-float img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.whatsapp-float img:hover {
+  transform: scale(1.1);
+}
+
+/* ================================
+   MOBILE RESPONSIVE
+==================================*/
+@media (max-width: 900px) {
+  nav {
+    display: none;
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .header {
+    padding: 15px 25px;
+  }
+
+  .hero h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .logo img {
+    height: 55px;
+  }
+  
+  .book-btn {
+    padding: 8px 14px;
+  }
+  
+  .hero img {
+    max-width: 90%;
+  }
+}
