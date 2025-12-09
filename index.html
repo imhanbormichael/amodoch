@@ -63,9 +63,8 @@
     </nav>
 
     <!-- Hamburger -->
-    <button id="hamburger" class="hamburger">
-      ☰
-    </button>
+    <button id="hamburger" class="hamburger">☰</button>
+
 
     <a href="/bookings/book.html"><button class="book-btn">Book Now</button></a>
   </header>
@@ -202,12 +201,30 @@
   <script>
     AOS.init();
 
-    const hamburger = document.getElementById("hamburger");
-    const navMenu = document.getElementById("navMenu");
+    
 
-    hamburger.addEventListener("click", () => {
-      navMenu.classList.toggle("open");
-    });
+    
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("navMenu");
+
+// Toggle menu
+hamburger.addEventListener("click", () => {
+  navMenu.classList.toggle("open");
+  hamburger.classList.toggle("active");
+});
+
+// Close menu when clicking outside
+document.addEventListener("click", (e) => {
+  const clickedInsideMenu = navMenu.contains(e.target);
+  const clickedHamburger = hamburger.contains(e.target);
+
+  if (!clickedInsideMenu && !clickedHamburger) {
+    navMenu.classList.remove("open");
+    hamburger.classList.remove("active");
+  }
+});
+
+
   </script>
 
   <script>

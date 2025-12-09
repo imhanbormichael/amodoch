@@ -101,6 +101,28 @@ nav.open a {
   padding: 15px 0;
   border-bottom: 1px solid #222;
 }
+/* Change hamburger to X when active */
+.hamburger.active {
+  transform: rotate(90deg);
+  transition: 0.3s ease;
+}
+
+.hamburger.active::after {
+  content: "✖";
+  font-size: 28px;
+}
+
+.hamburger.active::before {
+  content: "";
+}
+.hamburger.active {
+  color: transparent; /* hide original ☰ */
+}
+
+.hamburger.active::after {
+  color: gold;
+}
+
 
 /* ================================
    HERO SECTION
