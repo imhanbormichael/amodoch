@@ -104,6 +104,7 @@ header nav a:hover {
 }
 .contact-info p a:hover {
   text-decoration: underline;
+  color: #d4af37;
 }
 
 /* ================================
