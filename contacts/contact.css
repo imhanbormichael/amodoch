@@ -97,6 +97,14 @@ header nav a:hover {
 .contact-info p img {
   max-width: 50px;
 }
+.contact-info p a {
+  color: #002b5c;
+  text-decoration: none;
+  font-weight: 600;
+}
+.contact-info p a:hover {
+  text-decoration: underline;
+}
 
 /* ================================
    MEGA FOOTER
